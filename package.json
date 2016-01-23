@@ -1,5 +1,9 @@
 {
   "name": "request",
   "version": "1.0.0",
-  "main": "request.js"
+  "main": "request.js",
+  "dependencies": {
+    "class": "github:lexarx/class",
+	"event": "github:lexarx/event"
+  }
 }
