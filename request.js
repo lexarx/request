@@ -209,15 +209,15 @@ var Request = Class.extend({
 	getResponseHeader: function(name) {
 		return this.xhr.getResponseHeader(name);
 	}
+}, {
+	State: {
+		UNSENT: 0,
+		OPENED: 1,
+		HEADERS_RECEIVED: 2,
+		LOADING: 3,
+		DONE: 4
+	}
 });
-
-Request.State = {
-	UNSENT: 0,
-	OPENED: 1,
-	HEADERS_RECEIVED: 2,
-	LOADING: 3,
-	DONE: 4
-};
 
 module.exports = Request;
 
